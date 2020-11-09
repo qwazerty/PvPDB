@@ -1,0 +1,2 @@
+# PvPDB
+PvPDB Addon sources
