@@ -54,11 +54,8 @@ local function Mouseover_OnEvent(self, event, ...)
         if ns.db ~= nil and ns.db[realm] ~= nil and ns.db[realm][name] ~= nil then
             GameTooltip:AddLine(" ")
             GameTooltip:AddLine("Score PvPDB")
-            if ns.db[realm][name]['hl'] ~= nil then
-                GameTooltip:AddLine("Honor Level: "..ns.db[realm][name]['hl'], 1, 1, 1)
-            else
-                GameTooltip:AddLine("Honor Level: No Data", 1, 1, 1)
-            end
+            local hl = ns.db[realm][name]['hl'] and ns.db[realm][name]['hl'] or "No Data"
+            GameTooltip:AddLine("Honor Level: "..hl, 1, 1, 1)
             BracketTooltip(name, realm, "2v2", "2v2")
             BracketTooltip(name, realm, "3v3", "3v3")
             BracketTooltip(name, realm, "bg", "RBG")
@@ -70,7 +67,3 @@ end
 local Mouseover_EventFrame = CreateFrame("Frame")
 Mouseover_EventFrame:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
 Mouseover_EventFrame:SetScript("OnEvent", Mouseover_OnEvent)
-
---local name = UnitName("player")
---local realm = GetNormalizedRealmName()
--- message('PvPDB : name='..name..', realm='..realm)
