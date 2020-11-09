@@ -7,4 +7,3 @@
 PvPDB.lua
 db/db_characters_eu_alliance.lua
 db/db_characters_eu_horde.lua
-db/db_characters_test_test.lua
