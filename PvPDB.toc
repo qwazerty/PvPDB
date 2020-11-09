@@ -1,0 +1,10 @@
+## Interface: 90001
+## Title: PvPDB
+## Author: Qwazerty
+## Version: 1.0
+## Notes: PvPDB
+
+PvPDB.lua
+db/db_characters_eu_alliance.lua
+db/db_characters_eu_horde.lua
+db/db_characters_test_test.lua
