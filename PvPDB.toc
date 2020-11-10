@@ -2,8 +2,9 @@
 ## Title: PvPDB
 ## Author: Qwazerty
 ## Version: 1.0
-## Notes: PvPDB
+## Notes: Show PvP ranking information on tooltips
 
 PvPDB.lua
+db/db_realms_eu.lua
 db/db_characters_eu_alliance.lua
 db/db_characters_eu_horde.lua
