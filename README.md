@@ -21,7 +21,7 @@ This addon is inspired by Raider.IO, and works in the same way. All the data are
 
 # Links
 
-SourceForge : https://www.curseforge.com/wow/addons/pvpdb
+SourceForge : https://www.curseforge.com/wow/addons/pvpdb  
 Sources : https://github.com/qwazerty/PvPDB  
 Issues : https://github.com/qwazerty/PvPDB/issues  
 Database scripts : https://github.com/qwazerty/pvpdb.io
