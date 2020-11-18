@@ -8,3 +8,12 @@ PvPDB.lua
 db/db_realms_eu.lua
 db/db_characters_eu_alliance.lua
 db/db_characters_eu_horde.lua
+db/db_realms_us.lua
+db/db_characters_us_alliance.lua
+db/db_characters_us_horde.lua
+db/db_realms_kr.lua
+db/db_characters_kr_alliance.lua
+db/db_characters_kr_horde.lua
+db/db_realms_tw.lua
+db/db_characters_tw_alliance.lua
+db/db_characters_tw_horde.lua

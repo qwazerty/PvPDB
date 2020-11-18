@@ -9,13 +9,10 @@ Show PvP ranking information on tooltips, such as :
 - Arena/RBG matches (Won, Lost)
 - Arena/RBG winrate
 
-ONLY SUPPORTS EU FOR NOW. Others region are work in progress.
-
 This addon is inspired by Raider.IO, and works in the same way. All the data are store locally in the addon, so it needs regular update to keep up to date.
 
 # Roadmap
 
-- Support for others regions (US, KR, TW)
 - More regular data update (daily/weekly?)
 - Add tooltips in LFG mouseover
 - Add past seasons
@@ -24,6 +21,7 @@ This addon is inspired by Raider.IO, and works in the same way. All the data are
 
 # Links
 
+SourceForge : https://www.curseforge.com/wow/addons/pvpdb
 Sources : https://github.com/qwazerty/PvPDB  
 Issues : https://github.com/qwazerty/PvPDB/issues  
 Database scripts : https://github.com/qwazerty/pvpdb.io
