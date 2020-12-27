@@ -1,19 +1,15 @@
 ## Interface: 90002
 ## Title: PvPDB
 ## Author: Qwazerty
-## Version: 1.0.3-2020111800
+## Version: 1.0.3-20201227
 ## Notes: Show PvP ranking information on tooltips
 
 PvPDB.lua
-db/db_realms_eu.lua
 db/db_characters_eu_alliance.lua
 db/db_characters_eu_horde.lua
-db/db_realms_us.lua
 db/db_characters_us_alliance.lua
 db/db_characters_us_horde.lua
-db/db_realms_kr.lua
 db/db_characters_kr_alliance.lua
 db/db_characters_kr_horde.lua
-db/db_realms_tw.lua
 db/db_characters_tw_alliance.lua
 db/db_characters_tw_horde.lua

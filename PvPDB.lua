@@ -8,14 +8,21 @@ ns.dba = {}
 ns.dbh = {}
 ns.debug = false
 
+local function HonorLevelTooltip(db, name, realm, faction)
+    if db[realm][name]['hl'] ~= nil then
+        GameTooltip:AddLine("Honor Level: "..db[realm][name]['hl'], 1, 1, 1)
+    end
+end
+
 local function BracketTooltip(db, name, realm, faction, bracketId, bracketName)
     if db[realm][name][bracketId] ~= nil then
-        local won = db[realm][name][bracketId]['sms'][1]
-        local lost = db[realm][name][bracketId]['sms'][2]
+        local cr = db[realm][name][bracketId][1]
+        local won = db[realm][name][bracketId][2]
+        local lost = db[realm][name][bracketId][3]
         local winrate = math.floor(won*100/(won+lost) * 100) / 100
         GameTooltip:AddDoubleLine(
-            format("Ranked %s: %s CR", bracketName, db[realm][name][bracketId]['cr']),
-            format("%sW / %sL (%s%%)", won,	lost, winrate),
+            format("Ranked %s: %s CR", bracketName, cr),
+            format("%sW / %sL (%s%%)", won, lost, winrate),
             1, 1, 1, 1, 1, 1)
     end
 end
@@ -47,8 +54,7 @@ local function Mouseover_OnEvent(self, event, ...)
         if db ~= nil and db[realm] ~= nil and db[realm][name] ~= nil then
             GameTooltip:AddLine(" ")
             GameTooltip:AddLine("Score PvPDB")
-            local hl = db[realm][name]['hl'] and db[realm][name]['hl'] or "No Data"
-            GameTooltip:AddLine("Honor Level: "..hl, 1, 1, 1)
+            HonorLevelTooltip(db, name, realm, faction)
             BracketTooltip(db, name, realm, faction, "2v2", "2v2")
             BracketTooltip(db, name, realm, faction, "3v3", "3v3")
             BracketTooltip(db, name, realm, faction, "bg", "RBG")
