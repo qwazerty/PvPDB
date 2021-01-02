@@ -1,7 +1,7 @@
 ## Interface: 90002
 ## Title: PvPDB
 ## Author: Qwazerty
-## Version: 1.0.3-20201228
+## Version: 1.0.3-2021010200
 ## Notes: Show PvP ranking information on tooltips
 
 PvPDB.lua
